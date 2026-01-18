@@ -458,7 +458,6 @@ console.log(descifrarCodigo(eventos)); // 12
             );
           },
 
-          // ✅ FIX: este test estaba mal; ahora usa un input que realmente da 12 con las reglas.
           ({ scope }) => {
             const r = scope.descifrarCodigo([2, 4, 2, 8, 11, 6, 8, 1, 0, 7]);
             if (r !== 12) {
@@ -468,7 +467,6 @@ console.log(descifrarCodigo(eventos)); // 12
             }
           },
 
-          // ✅ FIX: también se corrige el array de la verificación de console.log
           ({ logs, scope }) => {
             const eventos = [2, 4, 2, 8, 11, 6, 8, 1, 0, 7];
             const r = scope.descifrarCodigo(eventos);
@@ -707,4 +705,5 @@ console.log(descifrarCodigo(eventos)); // 12
 </script>
 </body>
 </html>
+
 
